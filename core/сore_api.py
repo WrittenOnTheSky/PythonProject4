@@ -1,24 +1,25 @@
-# ==================== core/core_api.py ====================
+# ==================== project_root/core/core_api.py ====================
 """
-Core Capture API — предоставляет плагинам доступ к системным сенсорным функциям:
-- image: захват экрана
-- text: OCR/распознавание текста
-- audio: запись аудио
+Core API — единая точка доступа к возможностям ядра.
+Плагины используют этот API для:
+- захвата изображения
+- захвата текста (OCR)
+- захвата аудио
+
+В будущем сюда можно добавлять новые модули
+(вывод UI, системные функции, безопасность, синхронизация и т.д.).
 """
 
-import core.capture.image as ci
-import core.capture.text as ct
-import core.capture.audio as ca
+from core.capture import image, text, audio
 
-class CaptureAPI:
+
+class CoreAPI:
+    """Основной интерфейс для плагинов и ядра."""
     def __init__(self):
-        self.image = ci
-        self.text = ct
-        self.audio = ca
+        self.image = image      # select_area()
+        self.text = text        # ocr(), ocr_from_image()
+        self.audio = audio      # record(), record_snippet()
 
-# Плагин получает объект API через ядро
-api = CaptureAPI()
-# Использование в плагине:
-# img_dict = api.image.select_area()
-# text = api.text.from_image(img)
-# audio = api.audio.record(5)
+
+# Глобальный экземпляр API, который импортируют плагины
+api = CoreAPI()

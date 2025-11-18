@@ -1,29 +1,23 @@
-"""
-Пример интеграции плагина qwen3_analyzer с CoreApp
-- Тестовый запуск потока: захват экрана → мульти-ввод → локальный LLM
-"""
+# ==================== project_root/plugins/qwen3_analyzer/plugin.py ====================
+from core.сore_api import api
 
-from core_app import CoreApp
-import plugins.qwen3_analyzer as qwen_plugin
+class Plugin:
+    def __init__(self):
+        pass
 
-# Создаем экземпляр CoreApp
-app = CoreApp(plugins_path='plugins')
-
-# Регистрируем плагин вручную для теста
-qwen_plugin.register(app.plugin_manager._make_api())
-
-# Пример запуска захвата
-import threading
-
-def start_capture():
-    while True:
-        # Захват области экрана каждые 10 секунд (пример)
-        app.screen_capture()
-        import time
-        time.sleep(10)
-
-# Запускаем capture loop в отдельном потоке
-threading.Thread(target=start_capture, daemon=True).start()
-
-# Запускаем основной цикл CoreApp (heartbeat и плагины)
-app.start(heartbeat_interval=2.0)
+    def qwen3_analyze(self, data):
+        """
+        Принимает мульти-ввод:
+        - data['image'] : PIL.Image
+        - data['text'] : str
+        - data['audio'] : bytes
+        """
+        # Здесь будет вызов локальной модели Qwen3 через Ollama
+        # Для MVP просто эхо данных
+        result = {
+            "image_received": bool(data.get("image")),
+            "text_received": bool(data.get("text")),
+            "audio_received": bool(data.get("audio")),
+            "analysis": "Модель пока не подключена, это заглушка"
+        }
+        return result

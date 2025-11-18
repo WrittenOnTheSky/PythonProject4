@@ -4,19 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8d8ce65-96cd-4c92-ba77-97f52961ef7d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/PythonProject4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d8d8ce65-96cd-4c92-ba77-97f52961ef7d" name="Changes" comment="base">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoreApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/CoreApp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/capture/image.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/capture/image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/сore_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/сore_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/qwen3_analyzer_plugin.py" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/qwen3_analyzer_plugin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selection_capture.py" beforeDir="false" afterPath="$PROJECT_DIR$/screenshot/selection_capture.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../PythonProject4\exportToHTML" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -26,8 +28,25 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "WrittenOnTheSky"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/WrittenOnTheSky/PythonProject4.git",
+    "accountId": "247e0cb0-ccc5-46af-8879-85d85765102d"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -42,13 +61,23 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.CoreApp.executor": "Run",
+    "Python.core_app.executor": "Run",
+    "Python.test_screenshot.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "LessCore",
     "ignore.virus.scanning.warn.message": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zaboz\PycharmProjects\PythonProject4\screenshot" />
+      <recent name="C:\Users\zaboz\PycharmProjects\PythonProject4" />
+      <recent name="C:\Users\zaboz\PycharmProjects\PythonProject4\core" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -64,6 +93,23 @@
       <option name="presentableId" value="Default" />
       <updated>1763296537216</updated>
     </task>
+    <task id="LOCAL-00001" summary="base">
+      <option name="closed" value="true" />
+      <created>1763310160428</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1763310160428</updated>
+    </task>
+    <task id="LOCAL-00002" summary="base">
+      <option name="closed" value="true" />
+      <created>1763310355858</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1763310355858</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -76,6 +122,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="base" />
+    <option name="LAST_COMMIT_MESSAGE" value="base" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

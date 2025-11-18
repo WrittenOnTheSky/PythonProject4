@@ -4,7 +4,7 @@
 """
 
 
-from selection_capture import capture_area
+from screenshot.selection_capture import capture_area
 
 
 def select_area():
